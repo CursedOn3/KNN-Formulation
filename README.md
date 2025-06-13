@@ -14,6 +14,34 @@ This project implements a custom **k-Nearest Neighbors (k-NN)** classifier using
 
 ---
 
+## 📌 How It Works
+A suitable k is calculated from the number of training samples (√n, made odd).
+
+A test point is classified using the custom knn_predict function.
+
+The dataset is plotted for visual analysis.
+
+Cross-validation is used to find the best k using StratifiedKFold.
+
+
+## 📈 Visual Output
+Scatter plot of training samples categorized by label.
+
+Highlighted test point (X) on the same plot.
+
+Plot of cross-validated accuracy vs. different k values.
+
+
+## 🧪 Dependencies
+Install with pip: pip install numpy pandas seaborn matplotlib scikit-learn
+
+
+
+## ▶️ Run the Script
+python main.py
+
+
+
 ## 📊 Dataset
 
 - Each data point includes:
@@ -28,31 +56,5 @@ training_data = [
 ]
 training_labels = ['A', 'A', 'B', ...]
 
-
-📌 How It Works
-A suitable k is calculated from the number of training samples (√n, made odd).
-
-A test point is classified using the custom knn_predict function.
-
-The dataset is plotted for visual analysis.
-
-Cross-validation is used to find the best k using StratifiedKFold.
-
-
-📈 Visual Output
-Scatter plot of training samples categorized by label.
-
-Highlighted test point (X) on the same plot.
-
-Plot of cross-validated accuracy vs. different k values.
-
-
-🧪 Dependencies
-Install with pip: pip install numpy pandas seaborn matplotlib scikit-learn
-
-
-
-▶️ Run the Script
-python main.py
 
 
